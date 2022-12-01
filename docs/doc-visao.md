@@ -4,6 +4,7 @@
 
 | Membro                       | Papel                             | E-mail                         |
 | ---------------------------- | --------------------------------- | ------------------------------ |
+| Taciano de Morais Silva      | Cliente                           | taciano.silva@ufrn.br          |
 | Adriel Faria dos Santos      | Desenvolvedor, Testador           | adriel.fsantos@outlook.com     |
 | Guilherme Angelo de Medeiros | Desenvolvedor, Testador           | guilhermeangelo2001@gmail.com  |
 | Hilário Petronio D.M Dantas  | Desenvolvedor, Testador           | hilariod94@gmail.com           |
@@ -19,7 +20,7 @@
 
 ## Descrição do Projeto 
 
-<p align="justify">Sistema para facilitar o acompanhamento do andamento de Projetos de Software dos discentes nas turmas Engenharia de Software do curso de Bacharelado em Sistemas de Informação do CERES/UFRN. </p>
+Sistema para facilitar o acompanhamento do andamento de Projetos de Software dos discentes nas turmas de Engenharia de Software do curso de Bacharelado em Sistemas de Informação do CERES/UFRN. O sistema deve oferecer funcionalidades de gerenciamento de usuários, sejam eles tanto professores quanto alunos, projetos, fluxos, etapas, equipe, atividades e artefatos. O sistema também deve ser capaz de pontuar as atividades e artefatos ligados a um projeto, além disso, deve possuir uma integração com github sendo capaz de acompanhar commits quando realizados pelos membros de um projeto.
 
 ## Perfis dos Usuários
 
