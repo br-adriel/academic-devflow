@@ -71,7 +71,7 @@ Requisito | Título | Descrição | Ator
 | RNF03     | O sistema deve ser feito o log de ações dos usuários
 | RNF04     | O sistema deve possuir alta disponibilidade
 | RNF05     | O sistema deverá atender as normas legais
-| RNF05     | Os dados dos clientes devem ser de cunho privado
+| RNF05     | Os dados dos usu devem ser de cunho privado
 
 
 ## Riscos
