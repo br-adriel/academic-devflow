@@ -4,10 +4,10 @@
 
 | Membro                       | Papel                             | E-mail                         |
 | ---------------------------- | --------------------------------- | ------------------------------ |
+| Taciano de Morais Silva      | Cliente                           | taciano.silva@ufrn.br          |
 | Adriel Faria dos Santos      | Desenvolvedor, Testador           | adriel.fsantos@outlook.com     |
 | Guilherme Angelo de Medeiros | Desenvolvedor, Testador           | guilhermeangelo2001@gmail.com  |
-| Joan de Azevedo Medeiros     | Desenvolvedor, Testador e Gerente | joan.medeiros.130@ufrn.edu.br  |
-| Marcelo Rai Araujo           | Desenvolvedor, Testador           | marcelorai12@gmail.com         |
+| Hilário Petronio D.M Dantas  | Desenvolvedor, Testador           | hilariod94@gmail.com           |
 
 ## Matriz de Competências 
 
@@ -15,13 +15,13 @@
 | ---------------------------- | -----------
 | Adriel Faria dos Santos      | à definir
 | Guilherme Angelo de Medeiros | à definir
-| Joan de Azevedo Medeiros     | à definir
-| Marcelo Rai Araujo           | à definir
+| Hilário Petronio D.M Dantas  | à definir
+
 
 
 ## Descrição do Projeto 
 
-<p align="justify">Sistema para facilitar o acompanhamento do andamento de Projetos de Software dos discentes nas turmas Engenharia de Software do curso de Bacharelado em Sistemas de Informação do CERES/UFRN. </p>
+Sistema para facilitar o acompanhamento do andamento de Projetos de Software dos discentes nas turmas de Engenharia de Software do curso de Bacharelado em Sistemas de Informação do CERES/UFRN. O sistema deve oferecer funcionalidades de gerenciamento de usuários, sejam eles tanto professores quanto alunos, projetos, fluxos, etapas, equipe, atividades e artefatos. O sistema também deve ser capaz de pontuar as atividades e artefatos ligados a um projeto, além disso, deve possuir uma integração com github sendo capaz de acompanhar commits quando realizados pelos membros de um projeto.
 
 ## Perfis dos Usuários
 
@@ -72,7 +72,7 @@ Requisito | Título | Descrição | Ator
 | RNF03     | O sistema deve ser feito o log de ações dos usuários
 | RNF04     | O sistema deve possuir alta disponibilidade
 | RNF05     | O sistema deverá atender as normas legais
-| RNF05     | Os dados dos clientes devem ser de cunho privado
+| RNF05     | Os dados dos usu devem ser de cunho privado
 
 
 ## Riscos
