@@ -119,7 +119,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Estimativa**            | 8h |
 | **Tempo Gasto (real):**   | --- |
 | **Tamanho Funcional**     | --- |
-| **Analista**              | Hil (responsável por especificar/detalhar o US) |
+| **Analista**              | Hilario |
 | **Desenvolvedor**         | Adriel (responsável por implementar e realizar testes de unidade e testes de integração) |
 | **Revisor**               | Guilherme (responsável por avaliar a implementação e executar os testes de unidade e testes de integração) |
 | **Testador**              | Guilherme (responsável por executar os Testes de Aceitação e fazer o relatório de testes) |
