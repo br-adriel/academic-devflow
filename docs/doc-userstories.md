@@ -11,11 +11,11 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Descrição**                | Um usuário tem username, password, tipo de usuário. Os usuários são criados automaticamente no cadastro de cada membro, mas o sistema deve permitir que cada usuário possa visualizar seus dados e também alterá-los. |                                                                         
 | **Requisitos envolvidos**    | RF08                                                                                                                                                                                                                  |
-| **Estimativa**               | 5 Horas                                                                                                                                                                                                               | 
-| **Tempo Gasto (real):**      | ---                                                                                                                                                                                                                   |
-| **Prioridades**              | Essencial                                                                                                                                                                                                             |
-| **Tamanho Funcional**        | ---                                                                                                                                                                                               |
-| **Analista**                 | Guilherme                                                                                                                                                                                                             |
+| **Estimativa**               | 5 Horas                                                                                                                                                                                                              | 
+| **Tempo Gasto (real):**      | ---                                                                                                                                                                                                                  |
+| **Prioridades**              | Essencial                                                                                                                                                                                                            |
+| **Tamanho Funcional**        | ---                                                                                                                                                                                                                  |
+| **Analista**                 | Guilherme                                                                                                                                                                                                            |
 | **Desenvolvedor**            | Não Definido                                                                                                                                                                                                          |
 | **Revisor**                  | Não Definido                                                                                                                                                                                                          |
 | **Testador**                 | Não Definido                                                                                                                                                                                                          |
@@ -42,7 +42,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Tempo Gasto (real):**      | ---                                                                                                                                                                                                                  |
 | **Prioridades**              | Essencial                                                                                                                                                                                                            |
 | **Tamanho Funcional**        | ---                                                                                                                                                                                                                  |
-| **Analista**                 | Marcelo                                                                                                                                                                                                              |
+| **Analista**                 | Hilário                                                                                                                                                                                                              |
 | **Desenvolvedor**            | Não Definido                                                                                                                                                                                                          |
 | **Revisor**                  | Não Definido                                                                                                                                                                                                          |
 | **Testador**                 | Não Definido                                                                                                                                                                                                          |
@@ -119,9 +119,9 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Estimativa**            | 8h |
 | **Tempo Gasto (real):**   | --- |
 | **Tamanho Funcional**     | --- |
-| **Analista**              | Joan (responsável por especificar/detalhar o US) |
+| **Analista**              | Hil (responsável por especificar/detalhar o US) |
 | **Desenvolvedor**         | Adriel (responsável por implementar e realizar testes de unidade e testes de integração) |
-| **Revisor**               | Joan (responsável por avaliar a implementação e executar os testes de unidade e testes de integração) |
+| **Revisor**               | Guilherme (responsável por avaliar a implementação e executar os testes de unidade e testes de integração) |
 | **Testador**              | Guilherme (responsável por executar os Testes de Aceitação e fazer o relatório de testes) |
 
 ## **Testes de Aceitação (TA)**
