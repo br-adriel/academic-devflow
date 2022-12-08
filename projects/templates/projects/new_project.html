@@ -4,9 +4,9 @@
 
 {% block content %}
 
-<form method="post">
+<form method="post" class="project_add_form">
     {% csrf_token %} {{ form.as_p }}
-    <button type="submit">Salvar</button>
+    <button type="submit" class="save_project_button">Salvar</button>
 </form>
 
 

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'projects.apps.ProjectsConfig',
+    'artifacts.apps.ArtifactsConfig',
     'fontawesomefree'
 ]
 

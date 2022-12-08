@@ -6,7 +6,14 @@
 
 <div class="list_all_projects">
     <div class="list_button_group">
-        <button><i class="fa-solid fa-trash fa-lg icon"></i></button>
+        <button id="delete_project_button" disabled="true" type="submit" onclick="delete_project()"> 
+            <i id="trash_icon" class="fa-solid fa-trash fa-lg icon_trash"></i>
+        </button>
+
+        <button id="edit_project_button" disabled="true" type="submit" onclick="edit_project()">
+            <i id="edit_icon" class="fa-solid fa-edit fa-lg icon_edit"></i>
+        </button>
+
     </div>
     <table class="table project_list_table">
         <thead>
@@ -23,7 +30,7 @@
             {% for project in projects %} 
         
             <tr>
-                <th><input type="checkbox" name="" id={{project.id}}></th>
+                <th><input type="checkbox" name="codigo" value={{project.id}} id={{project.id}} onchange="check_checkboxes()"></th>
                 <th scope="row">{{project.id}}</th>
                 <td>{{project.nome}}</td>
                 <td>{{project.situacao}}</td>

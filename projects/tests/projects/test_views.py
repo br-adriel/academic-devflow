@@ -40,14 +40,21 @@ class ProjetoUpdateView(TestCase):
     SITUACAO = 'Em desenvolvimento'
 
     def setUp(self):
-        self.PROJETO_OBJ = Projeto.objects.create(descricao=self.DESCRICAO, data_inicio=self.DT_INICIO,
-                                                  data_termino=self.DT_TERMINO, nome=self.NOME, situacao=self.SITUACAO)
+        self.PROJETO_OBJ = Projeto.objects.create(
+            descricao=self.DESCRICAO, 
+            data_inicio=self.DT_INICIO,
+            data_termino=self.DT_TERMINO, 
+            nome=self.NOME, 
+            situacao=self.SITUACAO)
+
+        self.update_url = reverse_lazy('projects:atualizar', kwargs={'pk': self.PROJETO_OBJ.pk})
+
+                    
 
     def test_nome_do_projeto_editavel(self):
         """Testa se o campo 'nome' de um objeto Projeto é editável"""
 
         novo_nome = "nome 2"
-        url = reverse_lazy('projects:update', args=[self.PROJETO_OBJ.id])
         data = {
             "descricao": self.PROJETO_OBJ.descricao,
             "data_inicio": self.PROJETO_OBJ.data_inicio,
@@ -55,7 +62,7 @@ class ProjetoUpdateView(TestCase):
             "nome": novo_nome,
             "situacao": self.PROJETO_OBJ.situacao
         }
-        self.client.post(url, data)
+        self.client.post(self.update_url, data)
 
         projeto_atualizado = Projeto.objects.filter(nome=novo_nome).first()
         self.assertIsNotNone(projeto_atualizado)
@@ -107,7 +114,7 @@ class TestViewDeleteProject(TestCase):
         url = self.register_url
 
         response = self.client.delete(url)
-        self.assertEquals(response.status_code, 200)
+        self.assertEquals(response.status_code, 302)
 
 
 
