@@ -219,7 +219,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 |**Tempo gasto (real)**   | - |
 |**Tamanho Funcional**    | 7 |
 |**Analista**             | Guilherme Angelo de Medeiros |
-| **Revisor**             | Joan de Azevedo Medeiros |
+| **Revisor**             | Hilário Dantas |
 | **Testador**            | Adriel Faria dos Santos |
 
 ### US06 - Testes de Aceitação (TA)
