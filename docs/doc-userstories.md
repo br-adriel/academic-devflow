@@ -207,3 +207,28 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA06.09 | Um usuário deseja editar as informações de uma iteração. O usuário está logado. O usuário deve então clicar na opção "Iteração" disponível no menu. Após isso, o usuário deve ser direcionado para a tela de iterações existentes do projeto. O usuário identifica a iteração que deseja editar e a seleciona. O sistema deve exibir uma interface contendo as informações da iteração e um botão de editar. Ao clicar no botão editar, o sistema direciona o usuário para uma tela contendo um formulário preenchido com as informações atuais da iteração. O usuário preenche incorretamente as informações que deseja alterar e clica no botão salvar. O sistema deve informar ao usuário que o formulário foi preenchido incorretamente, além de informar quais campos foram preenchidos incorretamente. |
 | TA06.10 | Um usuário deseja excluir uma iteração que já se encontra em andamento. O usuário está logado. O usuário deve então clicar na opção "Iteração" disponível no menu. Após isso, o usuário deve ser direcionado para a tela de iterações existentes do projeto. O usuário identifica a iteração que deseja excluir e a seleciona. O sistema deve exibir uma interface contendo as informações da iteração e um botão de excluir. O usuário clica no botão "excluir". O sistema deve informar que a iteração encontra-se em andamento e informar que não é possível a exclusão da iteração. |
 | TA06.11 | Um usuário deseja excluir uma iteração que ainda não começou e ainda não possui nem atividades e nem artefatos. O usuário está logado. O usuário deve então clicar na opção "Iteração" disponível no menu. Após isso, o usuário deve ser direcionado para a tela de iterações existentes do projeto. O usuário identifica a iteração que deseja excluir e a seleciona. O sistema deve exibir uma interface contendo as informações da iteração e um botão de excluir. O usuário clica no botão "excluir". O sistema deve informar ao usuário que a operação foi concluída com sucesso e direcioná-lo para a tela de iterações. |
+
+### US06 - Manter Artefato
+
+|            |            |   |
+|------------|------------|---|
+|**descrição**            | O sistema deve permitir que seja realizado o cadastro, leitura, update e delete de artefatos. Além disso, um artefato está associado a um projeto, etapa e iteraçao, possibilitando realizar o controle de qual projeto, etapa e iteração tal artefato pertence. Os artefatos ajudarão a dar suporte ao andamento do projeto, auxiliando também no planejamento.|
+|**Requisitos envolvidos**| RF09, RF18 ,RF19 |
+|**Prioridade**           | importante |
+|**Estimativa**           | 10h |
+|**Tempo gasto (real)**   | - |
+|**Tamanho Funcional**    | 7 |
+|**Analista**             | Guilherme Angelo de Medeiros |
+| **Revisor**             | Joan de Azevedo Medeiros |
+| **Testador**            | Adriel Faria dos Santos |
+
+### US06 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA06.01 | O usuário informa na tela as informações necessárias ao cadastro do artefato, ao clicar no botão salvar os dados deve ser exibida uma mensagem de confirmação.|
+| TA06.02 | Ao clicar em "listar artefato", Todos os artefatos que ainda não foram entregues devem ser exibidos, assim também como os recém cadastrados.
+| TA06.03 | Caso o usuário preencha alguns dos campos incorretamente durante o cadastro, deve ser exibida uma mensagem alertando qual campo foi preenchido incorretamente, além disso, os dados da tentativa fracassada não podem ser armazenados. |
+| TA06.04 | Na listagem de Artefato o responsável pelo projeto poderá alterar o artefato clicando em "Alterar", posteriormente ele deverá preencher qual ou quais campos ele deseja alterar. Quando realizada a alteração uma mesagem de sucesso deve ser exibida, confimando que a alteração foi realizada com sucesso. |
+| TA06.05 | O responsável pelo projeto durante a alteração do artefato preenche informações inválidas, ao clicar em "Salvar" deve ser exibida um mensagem de erro, alertando o usuário qual(is) campo(s) foi preenchido incorretamente. |
+| TA06.06 | O Artefato no momento em que responsável pelo projeto ao clicar em "deletar" deve ser excluido, e uma mesagem de sucesso deve ser exibida. |
