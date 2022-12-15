@@ -210,25 +210,53 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 ### US07 - Manter Artefato
 
-|            |            |   |
-|------------|------------|---|
-|**descrição**            | O sistema deve permitir que seja realizado o cadastro, leitura, update e delete de artefatos. Além disso, um artefato está associado a um projeto, etapa e iteraçao, possibilitando realizar o controle de qual projeto, etapa e iteração tal artefato pertence. Os artefatos ajudarão a dar suporte ao andamento do projeto, auxiliando também no planejamento.|
+|            |            |
+|------------|------------|
+|**descrição**            | O sistema deve permitir que seja realizado o cadastro, leitura, update e delete de artefatos. Além disso, um artefato está associado a um projeto, etapa e iteraçao, possibilitando realizar o controle de qual projeto, etapa e iteração tal artefato pertence. Os artefatos ajudarão a dar suporte ao andamento do projeto, auxiliando também no planejamento. |
 |**Requisitos envolvidos**| RF09, RF18 ,RF19 |
 |**Prioridade**           | importante |
 |**Estimativa**           | 10h |
 |**Tempo gasto (real)**   | - |
 |**Tamanho Funcional**    | 7 |
 |**Analista**             | Guilherme Angelo de Medeiros |
-| **Revisor**             | Hilário Dantas |
-| **Testador**            | Adriel Faria dos Santos |
+| **Revisor**             | - |
+| **Testador**            | - |
 
 ### US07 - Testes de Aceitação (TA)
 
 | Código | Descrição |
 |-----|-----|
 | TA07.01 | O usuário informa na tela as informações necessárias ao cadastro do artefato, ao clicar no botão salvar os dados deve ser exibida uma mensagem de confirmação.|
-| TA07.02 | Ao clicar em "listar artefato", Todos os artefatos que ainda não foram entregues devem ser exibidos, assim também como os recém cadastrados.
+| TA07.02 | Ao clicar em "listar artefato", Todos os artefatos que ainda não foram entregues devem ser exibidos, assim também como os recém cadastrados. |
 | TA07.03 | Caso o usuário preencha alguns dos campos incorretamente durante o cadastro, deve ser exibida uma mensagem alertando qual campo foi preenchido incorretamente, além disso, os dados da tentativa fracassada não podem ser armazenados. |
 | TA07.04 | Na listagem de Artefato o responsável pelo projeto poderá alterar o artefato clicando em "Alterar", posteriormente ele deverá preencher qual ou quais campos ele deseja alterar. Quando realizada a alteração uma mesagem de sucesso deve ser exibida, confimando que a alteração foi realizada com sucesso. |
 | TA07.05 | O responsável pelo projeto durante a alteração do artefato preenche informações inválidas, ao clicar em "Salvar" deve ser exibida um mensagem de erro, alertando o usuário qual(is) campo(s) foi preenchido incorretamente. |
 | TA07.06 | O Artefato no momento em que responsável pelo projeto ao clicar em "deletar" deve ser excluido, e uma mesagem de sucesso deve ser exibida. |
+
+### US11 - Manter Atividade
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir o cadastro, visualização, edição e exclusão das atividades. Uma atividade tem código, nome, descrição, situação, data de início, data de conclusão, projeto, responsável. As informações referentes a atividade podem ser manipuladas pelos coordenadores e visualizadas pelos membros responsáveis pelo desenvolvimento do projeto. Todas as operações demandam que o usuário esteja logado. |
+| **Requisitos envolvidos** | RF01, RF02, RF10, RNF1, RNF2, RNF3 | 
+| **Prioridade** | Importante |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Adriel Faria dos Santos |
+| **Desenvolvedor** | - |
+| **Revisor** | - |
+| **Testador** | - |
+
+### US11 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA11.01 | O usuário acessa um projeto que coordena e clica no botão adicionar atividade. O sistema o redireciona para a tela de cadastro de atividade, onde há um formulário com os campos nome, descrição, data de início, data de conclusão e responsável, o usuário preenche os campos obrigatórios e submete o formulário. O sistema salva a nova atividade e o redireciona para a tela de projeto, na qual exibe a mensagem "Atividade cadastrada". |
+| TA11.02 | O usuário acessa um projeto que coordena e clica no botão adicionar atividade. O sistema o redireciona para a tela de cadastro de atividade, onde há um formulário com os campos nome, descrição, data de início, data de conclusão e responsável, o usuário não preenche todos os campos obrigatórios e tenta submeter o formulário. O sistema não permite a submissão e não salva a nova atividade, exibindo uma mensagem referente ao erro de validação do formulário. |
+| TA11.03 | O usuário acessa uma atividade de um projeto que coordena e clica no botão editar atividade. O sistema o redireciona para a tela de edição de atividade, onde há um formulário com os campos nome, descrição, data de início, data de conclusão e responsável, já preenchidos com os valores salvos atualmente. O usuário preenche os campos obrigatórios e submete o formulário. O sistema salva as alterações e o redireciona para a tela de projeto, na qual exibe a mensagem "Atividade atualizada". |
+| TA11.04 | O usuário acessa uma atividade de um projeto que coordena e clica no botão editar atividade. O sistema o redireciona para a tela de edição de atividade, onde há um formulário com os campos nome, descrição, data de início, data de conclusão e responsável, já preenchidos com os valores salvos atualmente. O usuário não preenche todos os campos obrigatórios e tenta submeter o formulário. O sistema não permite a submissão e não salva as alterações, exibindo uma mensagem referente ao erro de validação do formulário. |
+| TA11.05 | O usuário acessa uma atividade de um projeto que coordena e clica no botão excluir atividade. O sistema o redireciona para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar a atividade?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Apagar". O sistema exclui a atividade e o redireciona para a tela de projeto, na qual exibe a mensagem "Atividade apagada". |
+| TA11.06 | O usuário acessa uma atividade de um projeto que coordena e clica no botão excluir atividade. O sistema o redireciona para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar a atividade?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Cancelar". O sistema não apaga a atividade e redireciona o usuário a página de projeto. |
+| TA11.07 | O usuário acessa um projeto que coordena. Entre os detalhes do projeto estão as atividades referentes aquele projeto, com cada uma exibindo nome e situação. O usuário clica no nome de uma das atividades. O sistema o redireciona para a tela de visualização de atividade, na qual as informações nome, descrição, situação, data de início, data de conclusão e responsável aparecem. |
+| TA11.08 | O usuário acessa um projeto do qual é membro. Entre os detalhes do projeto estão as atividades referentes aquele projeto em que ele é responsável, com cada uma exibindo nome e situação. O usuário clica no nome de uma das atividades. O sistema o redireciona para a tela de visualização de atividade, na qual as informações nome, descrição, situação, data de início, data de conclusão e responsável aparecem. |
