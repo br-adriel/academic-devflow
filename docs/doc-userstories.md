@@ -266,7 +266,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 |     |     |
 | --- | --- |
-| **Descrição** | O sistema deve permitir o cadastro do plano de iteração, assim como a visualização, alteração e exclusão. Um plano de iterações tem dono e uma lista de iterações. As informações referentes ao plano de iteração podem ser manipuladas pelos coordenadores. Todas as operações demandam que o usuário esteja logado. |
+| **Descrição** | O sistema deve permitir o cadastro do plano de iteração, assim como a visualização, alteração e exclusão. Um plano de iterações tem dono, projeto e uma lista de iterações. As informações referentes ao plano de iteração podem ser manipuladas pelos coordenadores. Todas as operações demandam que o usuário esteja logado. |
 | **Requisitos envolvidos** | RF01, RF11, RNF1, RNF2, RNF3 | 
 | **Prioridade** | Desejável |
 | **Estimativa** | 10h |
@@ -281,9 +281,35 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Código | Descrição |
 |-----|-----|
-| TA12.01 | O usuário acessa a página de planos de iteração e clica no botão adicionar novo plano de iteração. O sistema o redireciona para a tela de cadastro de plano de iteração, onde há um formulário com os campos projeto e iterações, no qual ele pode selecionar um ou mais projetos que coordena e várias iterações que ele já tenha salvo ou adicionar uma nova a partir do botão "nova iteração". O usuário seleciona os projetos e o as iterações que ele deseja incluir naquele plano e submete o formulário. O sistema salva o novo plano de iterações e o redireciona para a tela de planos iteração, na qual exibe a mensagem "Plano de iteração cadastrado". |
+| TA12.01 | O usuário acessa a página de planos de iteração e clica no botão adicionar novo plano de iteração. O sistema o redireciona para a tela de cadastro de plano de iteração, onde há um formulário com os campos projeto e iterações, no qual ele pode selecionar um ou mais projetos que coordena e várias iterações que ele já tenha salvo ou adicionar uma nova a partir do botão "nova iteração". O usuário seleciona os projetos as iterações que ele deseja incluir naquele plano e submete o formulário. O sistema salva o novo plano de iterações e o redireciona para a tela de planos iteração, na qual exibe a mensagem "Plano de iteração cadastrado". |
 | TA12.02 | O usuário acessa a página de planos de iteração e seleciona um de seus planos de iteração. O sistema o redireciona para a tela de visualização de plano de iteração, onde exibe os projetos a que aquele plano está atrelado e detalhes das iterações que o compõem. |
 | TA12.03 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão editar. O sistema o redireciona para a tela de edição de plano de iteração, onde há um formulário com os campos projeto e iterações, no qual ele pode selecionar um ou mais projetos que coordena e várias iterações que ele já tenha salvo ou adicionar uma nova a partir do botão "nova iteração". Os projetos e iterações já presentes naquele plano vêm selecionados por padrão. O usuário modifica os projetos e as iterações que utilizam aquele plano e submete o formulário. O sistema salva as modificações e o redireciona para a tela de visualização de planos de iteração, na qual a mensagem "Plano de iteração atualizado" é exibida. |
 | TA12.04 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de iterações?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Apagar". O sistema apaga o plano de iterações e redireciona o usuário a página de planos de iteração, na qual exibe a mensagem "Plano de iterações apagado". |
 | TA12.05 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de iterações?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Cancelar". O sistema não apaga o plano de iterações e redireciona o usuário a página de planos de iteração. |
 | TA12.06 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que sim. O sistema redireciona o usuário para a página de planos de iteração, na qual a mensagem "Remova os projetos do plano de iteração antes de excluí-lo" é exibida. |
+
+### US13 - Manter plano de release
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir o cadastro do plano de release, assim como a visualização, alteração e exclusão. Um plano de releases tem dono, projeto e uma lista de releases. As informações referentes ao plano de iteração podem ser manipuladas pelos coordenadores. Todas as operações demandam que o usuário esteja logado. |
+| **Requisitos envolvidos** | RF01, RF11, RNF1, RNF2, RNF3 | 
+| **Prioridade** | Desejável |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Adriel Faria dos Santos |
+| **Desenvolvedor** | - |
+| **Revisor** | - |
+| **Testador** | - |
+
+### US13 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA13.01 | O usuário acessa a página de planos de release e clica no botão adicionar novo plano de release. O sistema o redireciona para a tela de cadastro de plano de release, onde há um formulário com os campos projeto e releases, no qual ele pode selecionar um ou mais projetos que coordena e várias releases que ele já tenha salvo ou adicionar uma nova a partir do botão "nova release". O usuário seleciona os projetos e as releases que ele deseja incluir naquele plano e submete o formulário. O sistema salva o novo plano de releases e o redireciona para a tela de planos de release, na qual exibe a mensagem "Plano de release cadastrado". |
+| TA13.02 | O usuário acessa a página de planos de release e seleciona um de seus planos de release. O sistema o redireciona para a tela de visualização de plano de release, onde exibe os projetos a que aquele plano está atrelado e detalhes das releases que o compõem. |
+| TA13.03 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão editar. O sistema o redireciona para a tela de edição de plano de release, onde há um formulário com os campos projeto e releases, no qual ele pode selecionar um ou mais projetos que coordena e várias releases que ele já tenha salvo ou adicionar uma nova a partir do botão "nova release". Os projetos e releases já presentes naquele plano vêm selecionados por padrão. O usuário modifica os projetos e as releases que utilizam aquele plano e submete o formulário. O sistema salva as modificações e o redireciona para a tela de visualização de planos de release, na qual a mensagem "Plano de release atualizado" é exibida. |
+| TA13.04 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de release?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Apagar". O sistema apaga o plano de release e redireciona o usuário a página de planos de release, na qual exibe a mensagem "Plano de release apagado". |
+| TA13.05 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de release?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Cancelar". O sistema não apaga o plano de release e redireciona o usuário a página de planos de release. |
+| TA13.06 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que sim. O sistema redireciona o usuário para a página de planos de release, na qual a mensagem "Remova os projetos do plano de release antes de excluí-lo" é exibida. |
