@@ -260,3 +260,30 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA11.06 | O usuário acessa uma atividade de um projeto que coordena e clica no botão excluir atividade. O sistema o redireciona para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar a atividade?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Cancelar". O sistema não apaga a atividade e redireciona o usuário a página de projeto. |
 | TA11.07 | O usuário acessa um projeto que coordena. Entre os detalhes do projeto estão as atividades referentes aquele projeto, com cada uma exibindo nome e situação. O usuário clica no nome de uma das atividades. O sistema o redireciona para a tela de visualização de atividade, na qual as informações nome, descrição, situação, data de início, data de conclusão e responsável aparecem. |
 | TA11.08 | O usuário acessa um projeto do qual é membro. Entre os detalhes do projeto estão as atividades referentes aquele projeto em que ele é responsável, com cada uma exibindo nome e situação. O usuário clica no nome de uma das atividades. O sistema o redireciona para a tela de visualização de atividade, na qual as informações nome, descrição, situação, data de início, data de conclusão e responsável aparecem. |
+
+
+### US12 - Manter plano de iteração
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir o cadastro do plano de iteração, assim como a visualização, alteração e exclusão. Um plano de iterações tem dono e uma lista de iterações. As informações referentes ao plano de iteração podem ser manipuladas pelos coordenadores. Todas as operações demandam que o usuário esteja logado. |
+| **Requisitos envolvidos** | RF01, RF11, RNF1, RNF2, RNF3 | 
+| **Prioridade** | Desejável |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Adriel Faria dos Santos |
+| **Desenvolvedor** | - |
+| **Revisor** | - |
+| **Testador** | - |
+
+### US12 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA12.01 | O usuário acessa a página de planos de iteração e clica no botão adicionar novo plano de iteração. O sistema o redireciona para a tela de cadastro de plano de iteração, onde há um formulário com os campos projeto e iterações, no qual ele pode selecionar um ou mais projetos que coordena e várias iterações que ele já tenha salvo ou adicionar uma nova a partir do botão "nova iteração". O usuário seleciona os projetos e o as iterações que ele deseja incluir naquele plano e submete o formulário. O sistema salva o novo plano de iterações e o redireciona para a tela de planos iteração, na qual exibe a mensagem "Plano de iteração cadastrado". |
+| TA12.02 | O usuário acessa a página de planos de iteração e seleciona um de seus planos de iteração. O sistema o redireciona para a tela de visualização de plano de iteração, onde exibe os projetos a que aquele plano está atrelado e detalhes das iterações que o compõem. |
+| TA12.03 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão editar. O sistema o redireciona para a tela de edição de plano de iteração, onde há um formulário com os campos projeto e iterações, no qual ele pode selecionar um ou mais projetos que coordena e várias iterações que ele já tenha salvo ou adicionar uma nova a partir do botão "nova iteração". Os projetos e iterações já presentes naquele plano vêm selecionados por padrão. O usuário modifica os projetos e as iterações que utilizam aquele plano e submete o formulário. O sistema salva as modificações e o redireciona para a tela de visualização de planos de iteração, na qual a mensagem "Plano de iteração atualizado" é exibida. |
+| TA12.04 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de iterações?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Apagar". O sistema apaga o plano de iterações e redireciona o usuário a página de planos de iteração, na qual exibe a mensagem "Plano de iterações apagado". |
+| TA12.05 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de iterações?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Cancelar". O sistema não apaga o plano de iterações e redireciona o usuário a página de planos de iteração. |
+| TA12.06 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que sim. O sistema redireciona o usuário para a página de planos de iteração, na qual a mensagem "Remova os projetos do plano de iteração antes de excluí-lo" é exibida. |
