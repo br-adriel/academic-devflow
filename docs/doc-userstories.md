@@ -266,7 +266,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 |     |     |
 | --- | --- |
-| **Descrição** | O sistema deve permitir o cadastro do plano de iteração, assim como a visualização, alteração e exclusão. Um plano de iterações tem dono, projeto e uma lista de iterações. As informações referentes ao plano de iteração podem ser manipuladas pelos coordenadores. Todas as operações demandam que o usuário esteja logado. |
+| **Descrição** | O sistema deve permitir o cadastro do plano de iteração, assim como a visualização, alteração e exclusão. Um plano de iterações tem dono, lista de projetos e uma lista de iterações. As informações referentes ao plano de iteração podem ser manipuladas pelos coordenadores. Todas as operações demandam que o usuário esteja logado. |
 | **Requisitos envolvidos** | RF01, RF11, RNF1, RNF2, RNF3 | 
 | **Prioridade** | Desejável |
 | **Estimativa** | 10h |
@@ -292,7 +292,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 |     |     |
 | --- | --- |
-| **Descrição** | O sistema deve permitir o cadastro do plano de release, assim como a visualização, alteração e exclusão. Um plano de releases tem dono, projeto e uma lista de releases. As informações referentes ao plano de iteração podem ser manipuladas pelos coordenadores. Todas as operações demandam que o usuário esteja logado. |
+| **Descrição** | O sistema deve permitir o cadastro do plano de release, assim como a visualização, alteração e exclusão. Um plano de releases tem dono, lista de projetos e uma lista de releases. As informações referentes ao plano de iteração podem ser manipuladas pelos coordenadores. Todas as operações demandam que o usuário esteja logado. |
 | **Requisitos envolvidos** | RF01, RF11, RNF1, RNF2, RNF3 | 
 | **Prioridade** | Desejável |
 | **Estimativa** | 10h |
