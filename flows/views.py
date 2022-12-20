@@ -36,11 +36,22 @@ def editar_fluxo_view(request, pk):
             form.save()
             return redirect('/fluxos')
         else:
-            return render(request, 'flows/editar.html', {'form': form, 'flow': flow})
+            return render(request, 'flows/fluxo/editar.html', {'form': form, 'flow': flow})
             
     else:
-        return render(request, 'flows/editar.html', {'form': form, 'flow': flow})
+        return render(request, 'flows/fluxo/editar.html', {'form': form, 'flow': flow})
 
+def excluir_fluxo_view(request, pk):
+    flow = get_object_or_404(Fluxo, id=pk)
+    etapa = get_object_or_404(Etapa, fluxo=pk)
+    if request.method == 'POST':
+        if etapa != '' :
+            messages.error(request, 'Não é possível excluir um fluxo que já possui etapas cadastradas')
+            return redirect('flows')
+
+        flow.delete()
+        return redirect('flows')
+    return redirect('flows')
 
 def adicionar_etapa_view(request, fluxo_pk):
     fluxo = get_object_or_404(Fluxo, id=fluxo_pk)
