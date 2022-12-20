@@ -232,4 +232,28 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA07.05 | O responsável pelo projeto durante a alteração do artefato preenche informações inválidas, ao clicar em "Salvar" deve ser exibida um mensagem de erro, alertando o usuário qual(is) campo(s) foi preenchido incorretamente. |
 | TA07.06 | O Artefato no momento em que responsável pelo projeto ao clicar em "deletar" deve ser excluido, e uma mesagem de sucesso deve ser exibida. |
 
+## User Story US08 - Manter Atividade
 
+|                              |                                                                                                                                                                                                                       |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Descrição**                | Uma atividade tem código, nome, descrição, situação, data de início, data de conclusão, projeto, responsável. O sistema deve permitir o cadastro de atividades para o projeto, assim como a alteração, visualização e exclusão destas. |
+| **Requisitos envolvidos**    | RF01, RF02, RF10                                                                                                                                                                                                                  |
+| **Estimativa**               | 5 Horas                                                                                                                                                                                                               |
+| **Tempo Gasto (real):**      | ---                                                                                                                                                                                                                   |
+| **Prioridades**              | Essencial                                                                                                                                                                                                             |
+| **Tamanho Funcional**        | ---                                                                                                                                                                                               |
+| **Analista**                 | Marcelo                                                                                                                                                                                                             |
+| **Desenvolvedor**            | Não Definido                                                                                                                                                                                                          |
+| **Revisor**                  | Não Definido                                                                                                                                                                                                          |
+| **Testador**                 | Não Definido                                                                                                                                                                                                          |
+
+### US08 - Testes de aceitação (TA)
+
+| **Código**  | **Descrição** |
+|-------------|---------------|
+| **TA01.01** | O usuário informa, na tela Cadastro de Atividades, todos os dados para fazer o cadastro corretamente, ao clicar em Salvar ele é notificado com uma mensagem de sucesso. Mensagem: Cadastro de Atividade realizado com sucesso. |
+| **TA01.02** | O usuário informa, na tela Cadastro de Atividades, os dados para fazer o cadastro incorretamente, ao clicar em Salvar ele é notificado com uma mensagem de erro. Mensagem: Cadastro de Atividade não realizado, o campo “xxxx” não foi informado corretamente. |
+| **TA01.03** | No perfil do usuário, ao clicar em Listar Atividades, deverá ser capaz de visualizar as atividades que foram cadastradas. |
+| **TA01.04** | O usuário informa, durante a alteração da Atividade, os campos que deverão ser atualizados corretamente, ao clicar em Salvar ele é notificado com uma mensagem de sucesso. Mensagem: Alteração de Atividade realizada com sucesso. |
+| **TA01.05** | O usuário informa, durante a alteração da Atividade, os campos que deverão ser atualizados incorretamente, ao clicar em Salvar ele é notificado com uma mensagem de erro. Mensagem: Alteração de Atividade não realizada, o campo “xxxx” não foi informado. |
+| **TA01.06** | O usuário informa, durante a exclusão da Atividade, qual atividade deverá excluir, ao clicar em Excluir ele é notificado com uma mensagem de erro. Mensagem: Atividade “xxxx” excluída com sucesso. |
