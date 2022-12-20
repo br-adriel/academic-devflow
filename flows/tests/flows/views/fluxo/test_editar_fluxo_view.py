@@ -28,3 +28,16 @@ class EditarFluxoView(TestCase):
         """Verifica se a url está vinculada a view"""
         found = resolve(self.targetUrl)
         self.assertEqual(found.func, editar_fluxo_view)
+
+    def test_editing_for_a_non_existing_object(self):
+        """Verifica """
+        url = reverse_lazy('flows:editar_fluxo', kwargs={'pk': 100})
+
+        data = {
+            'nome': "Fluxo novo",
+            'descricao': "Descrição nova"
+        }
+
+        response = self.client.post(url, data)
+
+        self.assertEqual(response.status_code, 404)
