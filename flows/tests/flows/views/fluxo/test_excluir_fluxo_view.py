@@ -14,3 +14,11 @@ class ExcluirFluxoView(TestCase):
         self.client.post(self.targetUrl)
         quant_flows = Fluxo.objects.count()
         self.assertEqual(quant_flows, 0)
+
+    def test_deletion_when_request_is_not_post(self):
+        """Verifica como o sistema se comporta quando o método da requisição é diferente de POST"""
+
+        response = self.client.delete(self.targetUrl)
+        quant_flows = Fluxo.objects.count()
+        
+        self.assertEqual(quant_flows, 1)
