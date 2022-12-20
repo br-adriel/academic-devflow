@@ -26,7 +26,7 @@ def detalhes_fluxo_view(request, pk):
     return render(request, 'flows/fluxo/detalhes.html', {'fluxo': fluxo})
 
 def editar_fluxo_view(request, pk):
-    flow = Fluxo.objects.get(id=pk)
+    flow = get_object_or_404(Fluxo, id=pk)
     form = CriarFluxoForm(instance=flow)
 
     if (request.method == 'POST'):
