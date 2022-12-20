@@ -10,8 +10,6 @@ urlpatterns = [
     path('<int:pk>/editar', editar_fluxo_view, name='editar_fluxo'),
     path('<int:pk>/excluir', excluir_fluxo_view, name='excluir_fluxo'),
     path('<int:fluxo_pk>/adicionar', adicionar_etapa_view, name='adicionar_etapa'),
-    path('<int:fluxo_pk>/editar/<int:pk>',
-         editar_etapa_view, name='editar_etapa'),
-    path('<int:fluxo_pk>/excluir/<int:pk>',
-         excluir_etapa_view, name='excluir_etapa'),
+    path('<int:fluxo_pk>/editar/<int:pk>', editar_etapa_view, name='editar_etapa'),
+    path('<int:fluxo_pk>/excluir/<int:pk>',excluir_etapa_view, name='excluir_etapa'),
 ]

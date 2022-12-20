@@ -43,15 +43,14 @@ def editar_fluxo_view(request, pk):
 
 def excluir_fluxo_view(request, pk):
     flow = get_object_or_404(Fluxo, id=pk)
-    etapa = get_object_or_404(Etapa, fluxo=pk)
     if request.method == 'POST':
-        if etapa != '' :
+        if flow.etapa_set.count() > 0:
             messages.error(request, 'Não é possível excluir um fluxo que já possui etapas cadastradas')
-            return redirect('flows')
-
-        flow.delete()
-        return redirect('flows')
-    return render(request, 'flows/excluir.html', {'flow': flow})
+            return redirect('flows:detalhes_fluxo',  pk=pk)
+        else:
+            flow.delete()
+            return redirect('/fluxos')
+    return render(request, 'flows/fluxo/excluir.html', {'flow': flow})
 
 def adicionar_etapa_view(request, fluxo_pk):
     fluxo = get_object_or_404(Fluxo, id=fluxo_pk)
