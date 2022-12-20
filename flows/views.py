@@ -51,7 +51,7 @@ def excluir_fluxo_view(request, pk):
 
         flow.delete()
         return redirect('flows')
-    return redirect('flows')
+    return render(request, 'flows/excluir.html', {'flow': flow})
 
 def adicionar_etapa_view(request, fluxo_pk):
     fluxo = get_object_or_404(Fluxo, id=fluxo_pk)
