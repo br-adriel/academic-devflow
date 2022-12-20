@@ -1,7 +1,5 @@
 from django.test import Client, TestCase
 from django.urls import reverse_lazy, resolve
-
-from flows.forms import CriarFluxoForm
 from flows.models import Fluxo
 from flows.views import editar_fluxo_view
 
