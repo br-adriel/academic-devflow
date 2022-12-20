@@ -25,6 +25,22 @@ def detalhes_fluxo_view(request, pk):
     fluxo = get_object_or_404(Fluxo, id=pk)
     return render(request, 'flows/fluxo/detalhes.html', {'fluxo': fluxo})
 
+def editar_fluxo_view(request, pk):
+    flow = Fluxo.objects.get(id=pk)
+    form = CriarFluxoForm(instance=flow)
+
+    if (request.method == 'POST'):
+        form = CriarFluxoForm(request.POST, instance=flow)
+
+        if(form.is_valid()):
+            form.save()
+            return redirect('/fluxos')
+        else:
+            return render(request, 'flows/atualizar_fluxo.html', {'form': form, 'flow': flow})
+            
+    else:
+        return render(request, 'flows/atualizar_fluxo.html', {'form': form, 'flow': flow})
+
 
 def adicionar_etapa_view(request, fluxo_pk):
     fluxo = get_object_or_404(Fluxo, id=fluxo_pk)
