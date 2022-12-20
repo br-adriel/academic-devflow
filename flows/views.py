@@ -36,10 +36,10 @@ def editar_fluxo_view(request, pk):
             form.save()
             return redirect('/fluxos')
         else:
-            return render(request, 'flows/atualizar_fluxo.html', {'form': form, 'flow': flow})
+            return render(request, 'flows/editar.html', {'form': form, 'flow': flow})
             
     else:
-        return render(request, 'flows/atualizar_fluxo.html', {'form': form, 'flow': flow})
+        return render(request, 'flows/editar.html', {'form': form, 'flow': flow})
 
 
 def adicionar_etapa_view(request, fluxo_pk):

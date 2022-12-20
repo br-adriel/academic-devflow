@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar fluxo{% endblock %}
+
+{% block content %}
+<div class="container mx-auto">
+  <div class="row g-2">
+    <div class="col-12">
+      <h2>Editar fluxo</h2>
+      {% include 'form_errors.html' %}
+      <form method="post">
+        {% csrf_token %}
+        {% include 'form_render.html' %}
+        <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
