@@ -142,12 +142,12 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Requisitos envolvidos** | RF01, RF03, RF04, RNF01, RNF02, RNF03 |
 | **Prioridade** | Importante |
 | **Estimativa** | 10h |
-| **Tempo gasto (real)** | - |
+| **Tempo gasto (real)** | 14h |
 | **Tamanho funcional** | 7PF (Pontos de função) |
-| **Analista** | Adriel Faria dos Santos |
-| **Desenvolvedor** | - |
-| **Revisor** | - |
-| **Testador** | - |
+| **Analista** | Adriel (responsável por especificar/detalhar o US) |
+| **Desenvolvedor** | Adriel (responsável por implementar e realizar testes de unidade e testes de integração) |
+| **Revisor** | Joan (responsável por avaliar a implementação e executar os testes de unidade e testes de integração) |
+| **Testador** | Adriel (responsável por executar os Testes de Aceitação e fazer o relatório de testes) |
 
 ### US05 - Testes de aceitação (TA)
 
@@ -169,8 +169,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA05.14 | Um usuário coordenador deseja excluir uma etapa de um fluxo de projeto. O usuário faz parte do projeto mas ela já iniciou. O sistema impede a exclusão. |
 | TA05.15 | Um usuário coordenador deseja excluir uma etapa de um fluxo de projeto. O usuário faz parte do projeto. O sistema impede a exclusão. |
 | TA05.16 | Um usuário coordenador deseja adicionar uma etapa a um fluxo de projeto. O usuário não faz parte do projeto. O sistema impede a criação. |
-| TA05.17 | Um usuário coordenador deseja adicionar uma etapa a um fluxo de projeto. O usuário faz parte do projeto. O sistema permite a criação, mostrando um formulário com os campos nome, descrição (opcional), data de início, data de finalização, usar gameficação, e posicao da etapa no fluxo. O usuário preenche todos os campos obrigatórios e o campo data de finalização tem um valor superior ou igual a dataatual. O usuário submete o formulário. O sistema cria a etapa. |
-| TA05.18 | Um usuário coordenador deseja adicionar uma etapa a um fluxo de projeto. O usuário faz parte do projeto. O sistema permite a criação, mostrando um formulário com os campos nome, descrição (opcional), data de início, data de finalização, usar gameficação, e posicao da etapa no fluxo. O usuário preenche todos os campos obrigatórios e o campo data de finalização tem um valor inferior a data atual. O sistema não permite a submissão do formulário, exibindo a mensagem de validação "A etapa não pode finalizar em uma data anteior a hoje". |
+| TA05.17 | Um usuário coordenador deseja adicionar uma etapa a um fluxo de projeto. O usuário faz parte do projeto. O sistema permite a criação, mostrando um formulário com os campos nome, descrição (opcional), data de início, data de finalização, usar gameficação, e posicao da etapa no fluxo. O usuário preenche todos os campos obrigatórios e o campo data de finalização tem um valor superior ou igual a data atual. O usuário submete o formulário. O sistema cria a etapa. |
+| TA05.18 | Um usuário coordenador deseja adicionar uma etapa a um fluxo de projeto. O usuário faz parte do projeto. O sistema permite a criação, mostrando um formulário com os campos nome, descrição (opcional), data de início, data de finalização, usar gameficação, e posicao da etapa no fluxo. O usuário preenche todos os campos obrigatórios e o campo data de finalização tem um valor inferior a data atual. O sistema não permite a submissão do formulário, exibindo a mensagem de validação "A etapa não pode finalizar em uma data anterior a hoje". |
 | TA05.19 | Um usuário administrador deseja visualizar uma etapa de um fluxo de projeto. O sistema redireciona para a tela de visualização de etapa. |
 | TA05.20 | Um usuário administrador deseja editar uma etapa de um fluxo de projeto. O sistema permite a edição, mostrando um formulário já preenchido com os campos nome, descrição (opcional), data de início, data de finalização, usar gameficação, e posicao da etapa no fluxo. O usuário altera alguns campos, mas todos os campos obrigatórios estão preenchidos. O usuário submete o formulário. O sistema altera a etapa. |
 | TA05.21 | Um usuário administrador deseja excluir uma etapa de um fluxo de projeto. O etapa ainda não iniciou. O sistema permite a exclusão, mostrando uma caixa de confirmação. O usuário confirma a exclusão. O sistema exclui a etapa. |
@@ -232,4 +232,59 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA07.05 | O responsável pelo projeto durante a alteração do artefato preenche informações inválidas, ao clicar em "Salvar" deve ser exibida um mensagem de erro, alertando o usuário qual(is) campo(s) foi preenchido incorretamente. |
 | TA07.06 | O Artefato no momento em que responsável pelo projeto ao clicar em "deletar" deve ser excluido, e uma mesagem de sucesso deve ser exibida. |
 
+## User Story US08 - Manter Atividade
 
+|                              |                                                                                                                                                                                                                       |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Descrição**                | Uma atividade tem código, nome, descrição, situação, data de início, data de conclusão, projeto, responsável. O sistema deve permitir o cadastro de atividades para o projeto, assim como a alteração, visualização e exclusão destas. |
+| **Requisitos envolvidos**    | RF01, RF02, RF10                                                                                                                                                                                                                  |
+| **Estimativa**               | 5 Horas                                                                                                                                                                                                               |
+| **Tempo Gasto (real):**      | ---                                                                                                                                                                                                                   |
+| **Prioridades**              | Essencial                                                                                                                                                                                                             |
+| **Tamanho Funcional**        | ---                                                                                                                                                                                               |
+| **Analista**                 | Marcelo                                                                                                                                                                                                             |
+| **Desenvolvedor**            | Não Definido                                                                                                                                                                                                          |
+| **Revisor**                  | Não Definido                                                                                                                                                                                                          |
+| **Testador**                 | Não Definido                                                                                                                                                                                                          |
+
+### US08 - Testes de aceitação (TA)
+
+| **Código**  | **Descrição** |
+|-------------|---------------|
+| **TA01.01** | O usuário informa, na tela Cadastro de Atividades, todos os dados para fazer o cadastro corretamente, ao clicar em Salvar ele é notificado com uma mensagem de sucesso. Mensagem: Cadastro de Atividade realizado com sucesso. |
+| **TA01.02** | O usuário informa, na tela Cadastro de Atividades, os dados para fazer o cadastro incorretamente, ao clicar em Salvar ele é notificado com uma mensagem de erro. Mensagem: Cadastro de Atividade não realizado, o campo “xxxx” não foi informado corretamente. |
+| **TA01.03** | No perfil do usuário, ao clicar em Listar Atividades, deverá ser capaz de visualizar as atividades que foram cadastradas. |
+| **TA01.04** | O usuário informa, durante a alteração da Atividade, os campos que deverão ser atualizados corretamente, ao clicar em Salvar ele é notificado com uma mensagem de sucesso. Mensagem: Alteração de Atividade realizada com sucesso. |
+| **TA01.05** | O usuário informa, durante a alteração da Atividade, os campos que deverão ser atualizados incorretamente, ao clicar em Salvar ele é notificado com uma mensagem de erro. Mensagem: Alteração de Atividade não realizada, o campo “xxxx” não foi informado. |
+| **TA01.06** | O usuário informa, durante a exclusão da Atividade, qual atividade deverá excluir, ao clicar em Excluir ele é notificado com uma mensagem de erro. Mensagem: Atividade “xxxx” excluída com sucesso. |
+
+## User Story US09 - Manter Iteração
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir o cadastro, visualização, edição e exclusão das iterações. Uma iteração tem código, data de início, data de término e uma descrição. As informações referentes a iteração pode ser manipuladas pelos coordenadores e  também pelos membros responsáveis pelo desenvolvimento do projeto.Todas as operações demandam que o usuário esteja logado. |
+| **Requisitos envolvidos** | RF01, RF02, RF11, RNF1, RNF2, RNF3 | 
+| **Prioridade** | Importante |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Adriel |
+| **Desenvolvedor** | Guilherme Angelo de Medeiros |
+| **Revisor** | Joan de Azevedo Medeiros |
+| **Testador** | Guilherme Angelo de Medeiros |
+
+### US09 - Testes de aceitação (TA)
+
+| Código  | Descrição |
+| ------- | --------- |
+| TA09.01 | Um usuário deseja visualizar uma das iterações do projeto. O usuário não está logado. O sistema o redireciona para a tela de login. |
+| TA09.02 | Um usuário deseja editar uma das iterações do projeto. O usuário não está logado. O sistema o redireciona para a tela de login. |
+| TA09.03 | Um usuário deseja excluir uma das iterações do projeto. O usuário não está logado. O sistema o redireciona para a tela de login. |
+| TA09.04 | Um usuário deseja adicionar uma nova iteração ao projeto. O usuário não está logado. O sistema o redireciona para a tela de login. |
+| TA09.05 | Um usuário deseja cadastrar uma nova iteração. O usuário está logado. O usuário deve então clicar na opção "Iteração" disponível no menu. Após isso, o usuário deve ser direcionado para a tela de iterações existentes do projeto. O usuário clica no botão "Nova Iteração". O sistema direciona o usuário para uma tela contendo um formulário. O usuário preenche corretamente as informações do formulário de registro de uma nova iteração e clica no botão salvar. O sistema deve informar ao usuário que a operação foi concluída com sucesso e direcioná-lo para a tela de iterações. |
+| TA09.06 | Um usuário deseja cadastrar uma nova iteração. O usuário está logado. O usuário deve então clicar na opção "Iteração" disponível no menu. Após isso, o usuário deve ser direcionado para a tela de iterações existentes do projeto. O usuário clica no botão "Nova Iteração". O sistema direciona o usuário para uma tela contendo um formulário. O usuário preenche incorretamente as informações do formulário e clica no botão "Salvar". O sistema deve informar ao usuário que o formulário foi preenchido incorretamente, além de informar quais campos foram preenchidos incorretamente. |
+| TA09.07  | Um usuário deseja visualizar um iteração. O usuário está logado. O usuário deve então clicar na opção "Iteração" disponível no menu. Após isso, o usuário deve ser direcionado para a tela de iterações existentes do projeto. O usuário identifica a iteração que deseja visualizar e a seleciona. O sistema deve exibir uma interface contendo o nome da iteração, a data de início e fim, e a sua descrição. Além disso, deve ser mostrado quantas atividades estão vinculados a esta iteração, assim como a quantidade de artefatos. |
+| TA09.08 | Um usuário deseja editar as informações de uma iteração. O usuário está logado. O usuário deve então clicar na opção "Iteração" disponível no menu. Após isso, o usuário deve ser direcionado para a tela de iterações existentes do projeto. O usuário identifica a iteração que deseja editar e a seleciona. O sistema deve exibir uma interface contendo as informações da iteração e um botão de editar. Ao clicar no botão editar, o sistema direciona o usuário para uma tela contendo um formulário preenchido com as informações atuais da iteração. O usuário preenche corretamente as informações que deseja alterar e clica no botão salvar. O sistema deve informar ao usuário que a operação foi concluída com sucesso e direcioná-lo para a tela de iterações. |
+| TA09.09 | Um usuário deseja editar as informações de uma iteração. O usuário está logado. O usuário deve então clicar na opção "Iteração" disponível no menu. Após isso, o usuário deve ser direcionado para a tela de iterações existentes do projeto. O usuário identifica a iteração que deseja editar e a seleciona. O sistema deve exibir uma interface contendo as informações da iteração e um botão de editar. Ao clicar no botão editar, o sistema direciona o usuário para uma tela contendo um formulário preenchido com as informações atuais da iteração. O usuário preenche incorretamente as informações que deseja alterar e clica no botão salvar. O sistema deve informar ao usuário que o formulário foi preenchido incorretamente, além de informar quais campos foram preenchidos incorretamente. |
+| TA09.10 | Um usuário deseja excluir uma iteração que já se encontra em andamento. O usuário está logado. O usuário deve então clicar na opção "Iteração" disponível no menu. Após isso, o usuário deve ser direcionado para a tela de iterações existentes do projeto. O usuário identifica a iteração que deseja excluir e a seleciona. O sistema deve exibir uma interface contendo as informações da iteração e um botão de excluir. O usuário clica no botão "excluir". O sistema deve informar que a iteração encontra-se em andamento e informar que não é possível a exclusão da iteração. |
+| TA09.11 | Um usuário deseja excluir uma iteração que ainda não começou e ainda não possui nem atividades e nem artefatos. O usuário está logado. O usuário deve então clicar na opção "Iteração" disponível no menu. Após isso, o usuário deve ser direcionado para a tela de iterações existentes do projeto. O usuário identifica a iteração que deseja excluir e a seleciona. O sistema deve exibir uma interface contendo as informações da iteração e um botão de excluir. O usuário clica no botão "excluir". O sistema deve informar ao usuário que a operação foi concluída com sucesso e direcioná-lo para a tela de iterações. |
