@@ -120,9 +120,9 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Tempo Gasto (real):**   | --- |
 | **Tamanho Funcional**     | --- |
 | **Analista**              | Joan (responsável por especificar/detalhar o US) |
-| **Desenvolvedor**         | Adriel (responsável por implementar e realizar testes de unidade e testes de integração) |
+| **Desenvolvedor**         | Joan (responsável por implementar e realizar testes de unidade e testes de integração) |
 | **Revisor**               | Joan (responsável por avaliar a implementação e executar os testes de unidade e testes de integração) |
-| **Testador**              | Guilherme (responsável por executar os Testes de Aceitação e fazer o relatório de testes) |
+| **Testador**              | Joan (responsável por executar os Testes de Aceitação e fazer o relatório de testes) |
 
 ### US04 - Testes de Aceitação (TA)
 
@@ -132,7 +132,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **TA04.02** | O usuário deseja cadastrar um novo fluxo de desenvolvimento, então o usuário clica no botão inserir fluxo de desenvolvimento. O usuário preenche algum campo ou todos os campos de modo incorreto e clica em Salvar/Cadastrar, o usuário é notificado com uma mensagem de erro. Mensagem: Cadastro não realizado, o campo “xxxx” não foi informado corretamente. |
 | **TA04.03** | O usuário deseja alterar o fluxo de desenvolvimento, então o usuário clica no botão editar fluxo de desenvolvimento. O usuário altera os campos que deseja de modo correto e clica em Editar/Salvar, recebendo uma notificação em tela de sucesso, como "Fluxo de desenvolvimento alterado com sucesso". |                                                     
 | **TA04.04** | O usuário deseja alterar o fluxo de desenvolvimento, então o usuário clica no botão editar fluxo de desenvolvimento. O usuário altera algum campo ou todos os campos de modo incorreto e clica em Editar/Salvar, o usuário é notificado com uma mensagem de erro. Mensagem: A operação falhou, o campo “xxxx” não foi informado corretamente. | 
-| **TA04.05** | O usuário deseja excluir o fluxo de desenvolvimento, o usuário clica no botão excluir, caso o fluxo de desenvolvimento já possua etapas cadastradas, o sistema deve informar ao usuário e perguntar se realmente deseja excluir o fluxo de desenvolvimento, caso o usuário confirme, o sistema envia o fluxo para a lixeria e notifica ao usuário com uma mensagem de sucesso. Mensagem: "Fluxo de desenvolvimento excluído com sucesso".   Caso o usuário não confirme, ele deve ser notificado com uma mensagem informando que nenhuma mudança ocorreu. |          
+| **TA04.05** | O usuário deseja excluir o fluxo de desenvolvimento, o usuário clica no botão excluir, o sistema deve perguntar se o usuário deseja prosseguir com a operação.Caso o usuário confirme e o fluxo de desenvolvimento já possua etapas cadastradas, o sistema deve informar ao usuário que não é possível fazer a exclusão, e o redireciona para a tela de detalhes do fluxo. Caso o fluxo não possua etapas cadastradas, o sistema deve perguntar se o usuário deseja realmente excluir e caso o usuário confirme, o sistema exclui o fluxo e redireciona o usuário para a tela inicial de fluxos. Caso o usuário não confirme, ele deve ser notificado com uma mensagem informando que nenhuma mudança ocorreu. |        
 
 ## User Story US05 - Manter etapa
 

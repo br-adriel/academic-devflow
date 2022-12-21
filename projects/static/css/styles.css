@@ -132,3 +132,35 @@
     cursor: pointer;
 }
 
+/* Template de Fluxos */
+
+.detalhes_fluxo {
+    min-width: 100% !important;
+    min-height: 100vh;
+    height: max-content;
+    padding: 20px;
+} 
+
+.box_fluxo {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px !important;
+    border-radius: 2px;
+    border: 1px solid gray;
+
+} 
+
+.description_fluxo {
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+
+.box_etapas {
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px !important;
+    border: 1px solid gray;
+
+}

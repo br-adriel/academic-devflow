@@ -1,5 +1,16 @@
 # Relatório de Testes do AcademicDevFlow
 
+
+## US04 - Manter Fluxo de Desenvolvimento 
+
+| Teste | Descrição | Especificação | Resultado |
+| ----- | --------- | ------------- | --------- |
+| **TA04.01** | O usuário deseja cadastrar um novo fluxo de desenvolvimento, então o usuário clica no botão inserir fluxo de desenvolvimento. O usuário preenche todos os campos de modo correto e clica em Salvar/Cadastrar, recebendo uma notificação em tela de sucesso, como "Fluxo de desenvolvimento cadastrado com sucesso". | A função implementada está de acordo com o User Story, no entanto, a mensagem de confirmação não aparece.  | O fluxo é cadastrado com sucesso, mas não aparece a mensagem de confirmação. |
+| **TA04.02** | O usuário deseja cadastrar um novo fluxo de desenvolvimento, então o usuário clica no botão inserir fluxo de desenvolvimento. O usuário preenche algum campo ou todos os campos de modo incorreto e clica em Salvar/Cadastrar, o usuário é notificado com uma mensagem de erro. Mensagem: Cadastro não realizado, o campo “xxxx” não foi informado corretamente. | A função implentada atende aos requisitos do User Story, porém a validação de campos não está implementada. | Caso os campos não sejam preenchidos, o fluxo não é cadastrado. Mas, por exemplo, se algum campo de texto for preenchido com números, o sistema permite o cadastro. |
+| **TA04.03** | O usuário deseja alterar o fluxo de desenvolvimento, então o usuário clica no botão editar fluxo de desenvolvimento. O usuário altera os campos que deseja de modo correto e clica em Editar/Salvar, recebendo uma notificação em tela de sucesso, como "Fluxo de desenvolvimento alterado com sucesso". |  A função implementada está de acordo com o User Story, no entanto, a mensagem de confirmação não aparece.  | O fluxo é editado com sucesso, mas não aparece a mensagem de confirmação. |                                                   
+| **TA04.04** | O usuário deseja alterar o fluxo de desenvolvimento, então o usuário clica no botão editar fluxo de desenvolvimento. O usuário altera algum campo ou todos os campos de modo incorreto e clica em Editar/Salvar, o usuário é notificado com uma mensagem de erro. Mensagem: A operação falhou, o campo “xxxx” não foi informado corretamente. |  A função implentada atende aos requisitos do User Story, porém a validação de campos não está implementada. | Caso os campos não sejam preenchidos, o fluxo não é atualizado. Mas, por exemplo, se algum campo de texto for preenchido com números, o sistema permite a atualização. |
+| **TA04.05** | O usuário deseja excluir o fluxo de desenvolvimento, o usuário clica no botão excluir, o sistema deve perguntar se o usuário deseja prosseguir com a operação.Caso o usuário confirme e o fluxo de desenvolvimento já possua etapas cadastradas, o sistema deve informar ao usuário que não é possível fazer a exclusão, e o redireciona para a tela de detalhes do fluxo. Caso o fluxo não possua etapas cadastradas, o sistema deve perguntar se o usuário deseja realmente excluir e caso o usuário confirme, o sistema exclui o fluxo e redireciona o usuário para a tela inicial de fluxos. Caso o usuário não confirme, ele deve ser notificado com uma mensagem informando que nenhuma mudança ocorreu. | A função implentada atende aos requisitos do User Story. | O fluxo é excluído com sucesso caso não possua etapas cadastradas e não excluído quando houver etapas cadastradas. |
+
 ## US05 - Manter Etapa
 
 | Teste | Descrição | Especificação | Resultado |
@@ -33,3 +44,4 @@
 | Teste | Providência | Tarefas/Tipo |
 | :---: | :---------: | :----------: |
 |       |             |              |
+
